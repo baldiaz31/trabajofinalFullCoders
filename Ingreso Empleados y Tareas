@@ -1,0 +1,25 @@
+Algoritmo Asignacióntareasaempleados
+	Definir cantidadEmpleados, cantidadTareas Como Entero
+    Definir nombreEmpleado, nombreTarea Como Caracter
+	
+    Escribir "Ingrese la cantidad de empleados:"
+    Leer cantidadEmpleados
+	
+    Para i <- 1 Hasta cantidadEmpleados Con Paso 1 Hacer
+        Escribir "Ingrese el nombre del empleado ", i, ":"
+        Leer nombreEmpleado
+		
+        Escribir "Ingrese la cantidad de tareas para el empleado ", nombreEmpleado, ":"
+        Leer cantidadTareas
+		
+        Para j <- 1 Hasta cantidadTareas Con Paso 1 Hacer
+            Escribir "Ingrese el nombre de la tarea ", j, " para el empleado ", nombreEmpleado, ":"
+            Leer nombreTarea
+			
+            Escribir "La tarea ", nombreTarea, " ha sido asignada al empleado ", nombreEmpleado
+        FinPara
+    FinPara
+FinAlgoritmo
+
+
+
