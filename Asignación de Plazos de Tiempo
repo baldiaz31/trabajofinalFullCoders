@@ -1,0 +1,25 @@
+Algoritmo Asignacióndeplazodetiempoatareas
+    Definir cantidadTareas Como Entero
+    Definir nombreTarea Como Caracter
+    Definir plazoTarea Como Real
+	
+    Escribir "Ingrese la cantidad de tareas:"
+    Leer cantidadTareas
+	
+    Para i <- 1 Hasta cantidadTareas Con Paso 1 Hacer
+        Escribir "Ingrese el nombre de la tarea ", i, ":"
+        Leer nombreTarea
+		
+        Escribir "Ingrese el plazo en días para la tarea ", nombreTarea, ":"
+        Leer plazoTarea
+		
+        Escribir "¿Se logró la tarea ", nombreTarea, "? (S/N)"
+        Leer respuesta
+		
+        Si respuesta = "S" Entonces
+            Escribir "La tarea ", nombreTarea, " se logró en ", plazoTarea, " días."
+        SiNo
+            Escribir "La tarea ", nombreTarea, " no se logró en ", plazoTarea, " días."
+        FinSi
+    FinPara
+FinAlgoritmo
